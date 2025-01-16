@@ -5,6 +5,7 @@ import (
 	"errors"
 	"fmt"
 	"os"
+	"strconv"
 	"time"
 )
 
@@ -64,8 +65,23 @@ func (arr *TodoSlice) Update(index int, title, desc string, completed bool) erro
 	return nil
 }
 
-func (arr *TodoSlice) Save(filename string, todoslice TodoSlice) error {
-	data, err := json.MarshalIndent(todoslice, "", "    ")
+func (arr *TodoSlice) List() {
+	arr2 := *arr
+	var emoji string
+	for i := 0; i < len(*arr); i++ {
+		if arr2[i].Completed {
+			emoji = "✅"
+		} else {
+			emoji = "❌"
+		}
+		date := arr2[i].DateAdded
+		datStr := strconv.Itoa(date.Day()) + "/" + date.Month().String() + "/" + strconv.Itoa(date.Year())
+		fmt.Printf("%v) %v\t\t%v\t\tCompleted: %v\t\tDate:%v\n", i+1, arr2[i].Title, arr2[i].Description, emoji, datStr)
+	}
+}
+
+func (arr *TodoSlice) Save(filename string) error {
+	data, err := json.MarshalIndent(*arr, "", "    ")
 	if err != nil {
 		return err
 	}

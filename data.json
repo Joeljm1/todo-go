@@ -1,0 +1,51 @@
+[
+    {
+        "title": "Chat app in Go",
+        "description": "Need to make it as project in go using websockets",
+        "completed": false,
+        "date": "2025-01-05T15:31:20.0316235+03:00",
+        "dateCompleted": "0001-01-01T00:00:00Z"
+    },
+    {
+        "title": "AWS",
+        "description": "Need to do software architect course and may be exam",
+        "completed": false,
+        "date": "2025-01-05T15:31:38.1864103+03:00",
+        "dateCompleted": "0001-01-01T00:00:00Z"
+    },
+    {
+        "title": "Http Server",
+        "description": "Build my http server",
+        "completed": false,
+        "date": "2025-01-07T23:35:00.4436355+05:30",
+        "dateCompleted": "0001-01-01T00:00:00Z"
+    },
+    {
+        "title": "Spotify Api",
+        "description": "Project using spotify api",
+        "completed": false,
+        "date": "2025-01-10T01:08:43.9865636+05:30",
+        "dateCompleted": "0001-01-01T00:00:00Z"
+    },
+    {
+        "title": "Ipv6 remaining",
+        "description": "From pg 48 of Book Network programming with go",
+        "completed": false,
+        "date": "2025-01-11T18:30:34.5360251+05:30",
+        "dateCompleted": "0001-01-01T00:00:00Z"
+    },
+    {
+        "title": "LMS Checker",
+        "description": "CHeck assignments",
+        "completed": false,
+        "date": "2025-01-12T15:11:38.1048504+05:30",
+        "dateCompleted": "0001-01-01T00:00:00Z"
+    },
+    {
+        "title": "Movie watchlist",
+        "description": "Movie watchlist and review in golang and react",
+        "completed": false,
+        "date": "2025-01-12T18:01:52.1411591+05:30",
+        "dateCompleted": "0001-01-01T00:00:00Z"
+    }
+]
